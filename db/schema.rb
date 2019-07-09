@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_08_092422) do
+ActiveRecord::Schema.define(version: 2019_07_09_091908) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
     t.string "name"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(version: 2019_07_08_092422) do
     t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "director"
+    t.string "actor"
+    t.datetime "release"
+    t.integer "duration"
+    t.string "rated"
+    t.string "trailer"
+    t.string "description"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.bigint "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["category_id"], name: "index_movies_on_category_id"
   end
 
