@@ -26,7 +26,6 @@ gem "paperclip"
 gem "toastr-rails"
 gem "ransack"
 gem "stripe"
-gem "haml-rails", "~> 2.0"
 group :development, :test do
   gem "faker"
   gem "pry-rails"
