@@ -25,6 +25,7 @@ gem "devise"
 gem "paperclip"
 gem "toastr-rails"
 gem "ransack"
+gem "stripe"
 group :development, :test do
   gem "faker"
   gem "pry-rails"
