@@ -240,3 +240,13 @@ en:
       room: "Room: "
       trailer: "Trailer"
       ticket: "Book tickets"
+  payments: 
+    new:
+      check: "Please, check registration errors"
+      registration: "Registration was successfully created."
+    show:
+      name: "Name: "
+      company: "Company: "
+      telephone: "Telephone: "
+      email: "Email: "
+      token: "Token: "

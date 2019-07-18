@@ -34,4 +34,5 @@ Rails.application.routes.draw do
   resources :reviews
   resources :orders, only: [:show]
   resources :movie_theaters, only: [:show]
+  resources :payments, only: [:show, :new, :create]
 end

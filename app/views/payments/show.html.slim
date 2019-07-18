@@ -1,0 +1,16 @@
+.container
+  p 
+    strong = t(".name") 
+    = @payment.full_name
+  p
+    strong = t(".comany")
+    = @payment.company
+  p
+    strong = t(".telephone")
+    = @payment.telephone
+  p
+    strong = t(".email")
+    = @payment.email
+  p 
+    strong = t(".token")
+    = @payment.card_token
