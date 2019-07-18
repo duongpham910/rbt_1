@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_17_090056) do
+ActiveRecord::Schema.define(version: 2019_07_17_163836) do
 
   create_table "admins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -87,10 +87,13 @@ ActiveRecord::Schema.define(version: 2019_07_17_090056) do
   end
 
   create_table "payments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_payments_on_user_id"
+    t.string "full_name"
+    t.string "company"
+    t.string "telephone"
+    t.string "email"
+    t.string "card_token"
   end
 
   create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -150,7 +153,6 @@ ActiveRecord::Schema.define(version: 2019_07_17_090056) do
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "seats"
   add_foreign_key "orders", "users"
-  add_foreign_key "payments", "users"
   add_foreign_key "rooms", "theaters"
   add_foreign_key "theaters", "cities"
 end

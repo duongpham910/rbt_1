@@ -1,0 +1,19 @@
+.container
+  %p#notice.alert.alert-success= notice
+  %p
+    %strong Full name:
+    = @payment.full_name
+  %p
+    %strong Company:
+    = @payment.company
+  %p
+    %strong Email:
+    = @payment.email
+  %p
+    %strong Telephone:
+    = @payment.telephone
+  %p
+    %strong Token:
+    = @payment.card_token
+  = link_to 'Edit', edit_registration_path(@registration), class: 'btn btn-primary'
+  = link_to 'Back', registrations_path, class: 'btn btn-primary'
