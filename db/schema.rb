@@ -153,7 +153,6 @@ ActiveRecord::Schema.define(version: 2019_07_17_163836) do
   add_foreign_key "order_items", "orders"
   add_foreign_key "order_items", "seats"
   add_foreign_key "orders", "users"
-  add_foreign_key "payments", "users"
   add_foreign_key "rooms", "theaters"
   add_foreign_key "theaters", "cities"
 end
