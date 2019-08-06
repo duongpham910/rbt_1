@@ -280,7 +280,6 @@ en:
       show:
         status: "Available"
 
-
     movies:
       new:
         title: "Create new Movies"
@@ -298,6 +297,8 @@ en:
         select: "Select a category"
         create: "Create a new Movie"
         aivailable: "Available"
+      movie:
+        delete: "Delete"
       index: 
         name: "Name"
         category: "Category"
