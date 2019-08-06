@@ -15,6 +15,6 @@ class MovieTheater < ApplicationRecord
     room = Room.find room_id
     theater_room = room.theater
     theater = Theater.find theater_id
-    errors.add(:base, "Room not belong to theater") unless theater == theater_room
+    errors.add(:theater, "Room not belong to theater") unless theater == theater_room
   end
 end
