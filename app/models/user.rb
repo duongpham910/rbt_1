@@ -7,6 +7,7 @@ class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :comments, dependent: :destroy
   after_create :welcome_send
+  validates :name, presence: true
 
   def active_for_authentication?
     super && !deactivated

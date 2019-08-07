@@ -47,6 +47,8 @@ group :development, :test do
   gem "rspec-rails", "~> 3.8"
   gem "shoulda-matchers"
   gem "simplecov"
+  gem 'factory_bot_rails'
+  gem 'database_cleaner', '~> 1.5'
 end
 
 group :development do
